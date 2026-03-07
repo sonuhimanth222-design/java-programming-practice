@@ -1,0 +1,21 @@
+package Module5;
+
+import java.lang.ArithmeticException;
+public class AgeException {
+    public static void main(String[] args) {
+
+        int age = 16;
+
+        try {
+            if (age < 18) {
+                throw new ArithmeticException("Age must be 18 or above");
+            } else {
+                System.out.println("Eligible");
+            }
+        }
+        catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+}
